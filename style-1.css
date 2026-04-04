@@ -1,0 +1,1360 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+
+
+
+.container {
+            width: 100%;
+            max-width: 2560px;
+            margin: 0;
+            background-color: #fff;
+            
+        }
+        
+        /* Header styles */
+        header {
+            background-color: #fff;
+            padding: 5px 20px;
+            
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .achievements-mobile-version{
+
+          display: none;
+
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            width: 75px;
+            height: 75px;
+            margin-right: 35px;
+        }
+        
+        .logo span {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            font-size: 20px;
+             margin-top: 15px;
+            transition: max-height 0.3s ease;
+           
+        }
+        
+        
+        
+        .nav-links a {
+            
+            text-decoration: none;
+           
+            color: #000000;
+            font-weight: bolder;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: #0066cc;
+        }
+
+          #menu-btn {
+            display: none;
+            font-size: 32px;
+            cursor: pointer;
+            color: #333;
+            user-select: none;
+        }
+
+       
+
+
+
+        .hero{
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .hero h1{
+            font-size: 64px;
+            font-family: poppins;
+            color: #0C0C0C;
+            font-weight: 600;
+            }
+
+            .hero-image1{
+                margin-top: -40px;
+
+            }
+
+            .hero h2{
+                font-family: poppins;
+                font-size: 36px;
+                font-weight: 600;
+                margin-left: 40px;
+                
+            }
+
+            .hero-image2{
+                position: absolute;
+                top: 20%;
+                left: 67%;
+                width: 423px;
+                height: 665px;
+            }
+            .hero p{
+                width: 64%;
+                line-height: 1.2;
+                font-size: 24px;
+                margin-left: 45px;
+                font-weight: normal;
+                margin-top: 30px;
+            }
+
+
+            .Info{
+                padding: 40px;
+                margin-top: 100px;
+            }
+        .Info h2{
+            text-align: center;
+            font-size: 36px;
+            font-weight: 600;
+            font-family:poppins;
+
+        }
+
+            /*  */
+             .footer{
+          padding: 25px;
+          margin-top: 100px;
+          background-color: #2D2E2E;
+          color: #FFFFFF;
+
+        }
+
+      .footer-logo span{
+          font-size: 32px;
+          font-weight: 600;
+          
+          margin-left: 10px;
+      }
+
+      .footer-bottom p{
+        
+        text-align: center;
+      }
+
+      .footer-para{
+        font-size: 25px;
+         
+        padding: 50px;
+      }
+
+      .call-email{
+        padding: 20px;
+        margin-left: 20px;
+        
+
+      }
+
+      .footer-right h4{
+        text-align: center;
+      }
+      .footer-right
+      {
+        position: absolute;
+        left: 83%;
+        margin-top:-50px ;
+       
+      }
+      .footer-right img{
+        margin-top: 5px;
+        
+        margin-left: 10px;
+      }
+
+      .images{
+        margin-top: 70px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .image-details , .red-bars{
+        display: flex;
+        justify-content: space-between;
+        color: #0C6CFC;
+        margin: 20px 30px;
+    }
+
+    .image-details h3{
+        font-size: 36px;
+        font-weight: medium;
+        font-family: poppins;
+    }
+
+
+    .red-bars{
+        margin-top: -30px;
+    }
+
+    .red-bar11{
+        border-radius: 20%  ;
+    }
+
+    .image-text{
+         display: flex;
+        justify-content: space-between;
+        color: #000000;
+        margin: 20px 15px; 
+        font-size: 32px;
+        
+        
+        }
+    .image-text p{
+      font-weight: 500;
+    }
+
+     .our-services {
+            padding: 80px 60px;
+            
+        }
+        
+        .our-services h2 {
+          font-family: poppins, sans-serif;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: bolder;
+            color: #090909;
+            text-align: center;
+        }
+
+       
+        .features {
+            display: flex;
+            justify-content: space-between;
+          
+            gap: 20px;
+           
+            margin: 0px 85px;
+        }
+        
+        .feature {
+          width: 244px;
+          height: 306px;
+          padding: 20px 50px;
+            text-align: center;
+            background-color: #F9FAFF;
+        }
+        
+        .feature img {
+            width: 148px;
+            height: 148px;
+            
+            transition: transform 0.3s ease;
+        }
+        
+        .feature:hover img {
+            transform: scale(1.1);
+        }
+        
+        .feature h3 {
+            font-size: 22px;
+            color: #0E0E0F;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #4F4E4E;
+            margin-top: 10px;
+        }
+
+        
+
+        .achievements h2 {
+            font-family: poppins, sans-serif;
+            font-size: 36px;
+            margin-bottom: 40px;
+            font-weight: bold;
+            color: #090909;
+            text-align: center;
+        }
+
+        .cards-info{
+          background-image: url(/pictures/background-image.png);
+          background-size:cover;
+                   
+        }
+
+        .card-1{
+          padding: 40px;
+          display: flex;
+        }
+
+        .card-1 h3{
+          font-size: 26px;
+          font-weight: 500;
+          color: #000000;
+          padding: 20px;
+          width:40%;
+          margin-top: 25px;
+          line-height: 1.5;
+        }
+        
+        .line{
+          
+          margin: 0px 20px;
+        }
+       
+        .card-1 .left-text{
+          width: 28%;
+        }
+
+        .smaller-star{
+          margin-left: 7px;
+        }
+
+
+
+        /* For-drivers Page */
+        .main{
+          background-color: #EAF8FF;
+        }
+
+       .man-auto-img{
+        position:absolute;
+        left: 25%;
+        top: 30%;
+       }
+
+        .texts-9{
+          position: absolute;
+          top: 23%;
+          left: 55%;
+        }
+        .texts-9 h2{
+          font-size: 64px;
+          font-weight: 600;
+        }
+
+        .texts-9 p{
+          font-size: 20px;
+        }
+
+        .form h2{
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        .form label{
+          font-size: 24px;
+          font-weight:600;
+        }
+
+        .form-1 , .qpo-section , .main-mobile{
+          display: none;
+        }
+
+        .texts p{
+          font-size: 20px;
+        }
+
+        .form{
+          position:relative;
+          padding: 30px;
+          border-radius: 6%;
+          display: inline-block;
+          margin:60px;
+          margin-top:100px;
+          background-color: white;
+        }
+
+        label{
+          margin: 5px;
+        }
+
+       input, select{
+        background-color: #EBEBEC;
+        margin: 10px;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        width: 487px;
+        height: 80px;
+       }
+
+       button{
+       
+        background-color: #0C6CFC;
+        color: #ffffff;
+        width: 270px;
+        height: 70px;
+        border-radius: 80px;
+        border: none;
+        font-size: 32px;
+        margin: 20px;
+        margin-left: 20%;
+       }
+
+       .fields{
+        margin-top: 40px;
+       }
+
+       .info-1{
+        margin-top: 20px;
+        color: #808080;
+       }
+
+.features-fordriver{
+  margin:70px;
+}
+
+.features-fordriver h2{
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 64px;
+}
+
+.inside-features{
+  margin-bottom: 105px;
+
+  display: flex;
+}
+.inside-1{
+  margin-top: 50px;
+  margin-left: 150px;
+  color: #000;
+  
+}
+
+
+.inside-1 img{
+  width: 275px;
+  height: 275px;
+  margin-bottom: 20px;
+}
+
+.inside-1 h3{
+  margin-top: 20px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.inside-1 p{
+  margin-top: 20px;
+  font-size: 28px;
+  width: 70%;
+}
+
+
+
+.inside-2-img{
+  background-image: url(/pictures/Background-light.png);
+  background-repeat: no-repeat;
+  margin: 10px;
+  
+  padding: 10px;
+}
+
+
+.inside-features{
+  justify-content: space-evenly;
+}
+
+.details-fordrivers {
+  
+    display: flex;
+    align-items: center;
+  
+    padding: 40px;
+    padding-left:240px;
+    background-color: #f0f0f0;
+}
+
+.phone-image {
+    width: 302px;
+    height: 623px;
+    margin-right: 50px;
+}
+
+.info-2 {
+    width: 90%;
+    margin-left: 80px;
+}
+
+.info-2 h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.info-2-txt .step {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 46px;
+    height: 46px;
+    margin-right: 12px;
+    margin-top: 15px;
+}
+
+.step h3 {
+    margin: 0;
+    font-size: 32px;
+    color:#000;
+    font-weight: 600;
+}
+
+.step p {
+    margin: 4px 0 0 0;
+    font-size: 28px;
+}
+
+
+/* media queries */
+
+
+
+@media (max-width:1325px)
+{
+   .nav-links a{
+    font-size: 20px;
+    
+  }
+  
+  .hero{
+    padding: 0px;
+  }
+  .logo span{
+    font-size: 22px;
+  }
+  .logo img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+
+.hero-image2{
+    width: 30%;
+    height:550px;
+  }
+
+  .hero p,h1{
+    width: 65%;
+  }
+
+  .hero h1{
+    font-size: 60px;
+  }
+  .hero h2{
+    font-size: 30px;
+  }
+
+ 
+.hero-image2 {
+  position: absolute; 
+  top: 40%;
+
+}
+
+.our-services h2{
+  margin-left: 50px;
+}
+.texts h3{
+  width: 60%;
+}
+
+.footer-right{
+  margin-left: -30px;
+}
+
+.call-email{
+  margin-top: -25px;
+}
+
+.footer{
+  padding-bottom: 10px;
+}
+.footer p{
+  margin-top:30px;
+  
+  color: #FCFCFC;
+}
+
+
+}
+
+ @media (max-width: 769px) {
+            header {
+                padding: 15px 20px;
+            }
+
+         .nav-links {
+                
+                position: fixed; 
+                top: 70px;
+                left: 0;
+                height: 50vh;
+                width: 50vw;
+                background: white;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                display: none; 
+                z-index: 9999;
+            
+            }
+            .nav-links.active {
+                display: flex; 
+                size: 100%;
+            }
+            .nav-links li {
+                margin: 20px 0;
+                text-align: center;
+            }
+            #menu-btn { 
+                display: block; 
+            }
+
+            .hero h1{
+              font-size: 52px;
+            }
+
+            .hero h2{
+              font-size: 26px;
+            }
+
+            .hero p{
+              font-size: 18px;
+              width: 60%;
+            }
+
+            
+
+            .hero-image2{
+              width: 250px;
+              height: 500px;
+            }
+            
+        .images img{
+          width: 150px;
+          height: 150px;
+        }
+
+        .red-bars img{
+          width: 120px ;
+        }
+
+        .red-bars .red-bar11{
+          width: 65px;
+        }
+      
+        .image-text, .image-details h3{
+          font-size: 26px;
+     }
+
+     .image-text p{
+      margin-left: 10px;
+
+     }
+
+     .our-services , .feature{
+      padding: 0;
+     
+     }
+
+     .features{
+      justify-content: space-evenly;
+      margin: 0px 40px;
+     }
+
+     .achievements{
+      margin-top: 30px;
+      margin: 0 px 0px;
+     }
+
+     .card-1 .left-text{
+      width: 100%;
+     }
+
+    
+     .achieve-2-img{
+      width: 350px;
+      height: 200px;
+     }
+
+     .texts h3, .left-text{
+      width: 100%;
+     }
+
+     .footer-right{
+      margin-left: -80px;
+      margin-top: -60px;
+     }
+
+     .footer-para{
+      padding: 80px;
+     }
+     .call-email{
+      margin-top: 0px;
+     }
+
+
+
+        }
+
+        @media (max-width: 720px) {
+
+
+   
+
+          .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: 50vh;
+        width: 60vw;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 9999;
+        margin: 0px;
+        padding: 0px;
+    }
+
+          .hero-image2{
+            display: none;
+          }
+
+          .Info{
+
+            display: none;
+          }
+          .hero h1{
+            font-size: 24px;
+            color: #000;
+          }
+          .hero-image1{
+            margin-top:-30px;
+            width: 80px;
+          }
+
+          .hero h2{
+            font-size: 20px;
+            margin: 0px;
+            font-weight: 600;
+            color: #000;
+          }
+
+          .hero p{
+            margin: 0px;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 16px;
+          }
+         
+          .Info h2{
+            font-size: 20px;
+            margin-left: -30px;
+            font-weight: 600;
+          }
+
+          .images img{
+          width: 100px;
+          height: 100px;    
+            }
+
+            .Info{
+              padding: 10px;
+            }
+
+            
+           
+
+            .features{
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              justify-content: center;
+              align-items: center;
+              
+            }
+
+            /* Mobile */
+
+            
+  .achievements-mobile-version {
+    display: block;
+  max-width: 425px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: #fff;
+}
+
+.achievements-mobile-version h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000;
+}
+
+.achievement-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.achievement-card {
+  padding: 12px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievement-card img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 5px;
+}
+
+
+.achievement-card .red-bar{
+  width: 68px;
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+
+.achievement-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.achievement-card .highlight {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  display: inline-block;
+  
+}
+
+.red-bar,.red-bar-04{
+  display: block;
+  width: 68px;
+  height: 4px;
+  margin: 2px auto 6px auto;
+}
+
+.achievement-card .red-bar-04{
+  width: 100px;
+  height: 4px;
+  margin-bottom: 10px;
+}
+
+.achievement-card p{
+
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+.achievement-card .highlight{
+
+  font-size: 24px;
+}
+
+/* Only center borders */
+.border-right {
+  border-right: 1px solid #ccc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+/*  */
+
+            .feature{
+              margin-bottom: 30px;
+            }
+            .our-services h2{
+              margin: 50px 0px;
+              font-size: 20px;
+            }
+
+            .staffs{
+
+              width:115px;
+              
+            }
+
+            .achievements h2{
+              font-size: 20px;
+            }
+
+            .achievements , .card-1{
+              display: flex;
+              flex-direction: column;
+              padding:10px;
+              background-color: #ffffff;
+            }
+
+            .line{
+              width: 2px;
+              transform:rotate(90deg);
+              height: 365px;
+              margin-left: 190px;
+              margin-top: -150px;
+            }
+
+           .texts h3{
+              margin-top: -180px;
+              font-size: 20px;
+            }
+
+            .card-1 .left-text{
+              width: 100%;
+              font-size: 20px;
+              margin-bottom: 0px;
+
+            }
+
+           #aci-2{
+            margin-top: -100px;
+            margin-bottom: 50px;
+           }
+          
+            .card-1{
+              padding-bottom: 40px;
+            }
+
+            .cards-info{
+              background-color: #ffffff;
+            }
+           
+
+            .footer-logo span
+            {
+              font-size: 24px;
+              margin-top: 80px;
+             
+
+width:90%            }
+
+.footer-logo{
+   padding: 20px;
+}
+
+
+.footer{
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer-logo img{
+  width: 34px;
+  height: 34px;
+}
+
+
+.footer-para{
+  padding: 25px;
+  font-size: 15px;
+}
+
+.call-email{
+
+  margin: 0px;
+  font-size: 13px;
+}
+
+.call-email img{
+  width: 20px;
+  height: 20px;
+}
+
+.footer-right{
+ margin: 380px 0px 0px -130px;
+}
+
+.footer-right img{
+  width: 22px;
+  height: 22px;
+}
+
+.footer-right h4{
+  font-size: 20px;
+
+
+}
+
+.footer p{
+  margin: 0px;
+  margin-top: 10px;
+  font-size: 10px;
+  color: #FCFCFC;
+}
+
+        }
+ 
+ 
+ 
+        @media (max-width: 420px){
+
+          .line{
+           margin-left: 170px;
+          }
+
+          .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: 50vh;
+        width: 80vw;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 9999;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .footer-right{
+ margin: 310px 0px 0px -130px;
+}
+
+ }
+
+ @media(max-width:345px){
+
+  .footer-right{
+margin:480px 0px 0px -130px;
+  }
+  
+ }
+
+            
+@media (max-width: 374px) {
+
+  
+
+
+
+  .nav-links {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: 50vh;
+        width: 80vw;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+        z-index: 9999;
+        margin: 0px;
+        padding: 0px;
+    }
+
+  .our-services h2{
+    font-size: 16px;
+  }
+
+
+  .hero h2{
+    font-size: 16px;
+  }
+
+  .logo span{
+    font-size: 26px;
+    margin-left: -15px;
+  }
+
+
+  .achievements-mobile-version h2{
+    font-size: 16px;
+  }
+  .hero p{
+    font-size: 15px;
+  }
+
+  .staffs{
+    width: 100px;
+    margin: 0px 2px;
+  }
+
+
+  .achieve-2-img{
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+
+  .line{
+    position: relative;
+    height: 300px;
+    margin-bottom: 30px;
+    
+    margin-left: 140px;
+  }
+
+  .footer-para{
+
+
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .footer-right img{
+
+    width: 15px;
+    height: 15px;
+  }
+
+  .footer-right h4{
+    font-size: 15px;
+    margin: 0px;
+    margin-top: -50px;
+   
+    
+  }
+
+.call-email{
+  font-size: 11px;
+}
+
+.call-email img{
+  width: 15px;
+  height: 15px;
+}
+  .footer-right{
+    margin-left: -100px;
+  }
+ 
+  .footer p{
+    font-size: 8px;
+  }
+}
+
+
+     
+
+
+
+/* Policies */
+
+  
+  
+  
+  
+.policies{
+  
+    margin-top: 30px;
+    padding: 20px;
+  }
+
+  .policies a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+@media (max-width:1035px)
+{
+
+  .policies{
+    margin-top: 40px;
+    padding: 0px;
+  }
+
+  .policies p{
+    margin: 20px 0px;
+
+  }
+
+}
+
+@media(max-width:770px)
+{
+
+
+  .policies{
+    margin-top: 30px;
+  }
+}
+
+@media(max-width:485px){
+
+  .policies{
+    margin-top: 20px;
+  }
+
+  .policies p{
+    margin: 15px 0px;
+  }
+
+
+}
+
+@media (max-width:350px){
+  .policies p{
+
+    margin:10px 0px;
+  }
+}
+
+
+@media screen and (min-width: 1610px) and (max-width: 2561px) {
+  .footer-para {
+    font-size: 35px;
+    padding: 60px; /* or whatever size you want */
+  }
+
+  .call-email{
+
+    font-size: 24px;
+  }
+
+  .footer-bottom p{
+    font-size: 24px;
+  }
+}

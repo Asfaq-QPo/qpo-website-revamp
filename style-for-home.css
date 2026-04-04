@@ -1,0 +1,734 @@
+ .qpo-mobile-section{
+    display: none;
+  }
+
+  .qpo-why-choose{
+    display: none;
+  }
+
+  .qpo-testimonial-mobile-section{
+    display: none;
+
+  }
+
+
+@media screen and (min-width: 1910px) and (max-width: 1921px) {
+  .footer-para {
+    font-size: 94px; /* or whatever size you want */
+  }
+  
+}
+
+  
+  @media (max-width:1441px){
+
+
+    .nav-links span{
+      position: relative !important;
+      top: -3%;
+    }
+      
+    
+
+  .incubated-blackline{
+    display: block;
+ position: absolute;
+ left: 38%;
+ top: 460%;
+ width: 1.5px;
+ height: 400px;
+ 
+
+}      
+}
+
+
+  .feature img{
+    width: 230px;
+    height: 230px;
+  }
+
+  .feature h3{
+    font-size: 26px;
+  }
+
+  .images h2{
+    font-size:35px;
+  }
+
+  .media-card a , .media-card1 a{
+
+    font-size: 24px;
+    font-weight: 400;
+    color:#0C6CFC;
+  }
+  .our-services h2 , .media-section h2{
+font-size: 28px;
+  }
+
+  .our-services h2 img , .media-section h2 img {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    width: 306px;
+    height: 9px;
+  }
+
+
+  .testimonial-section {
+    background-color: #F9FAFF;
+  }
+@media (max-width: 1355px) {
+  .qpo-mobile-section{display: none;}
+
+  .our-services{
+    padding: 50px 0px;
+  }
+
+  .feature{
+    padding: 20px;
+  }
+
+  .feature img{
+    width: 205px;
+    height: 205px;
+  }
+
+  .app-links h2{
+    font-size: 32px;
+  }
+ 
+  .content h2{
+    top: 14%;
+    left: 43%;
+    font-size: 44px;
+  }
+
+  .card-img-top{
+    width: 300px;
+    height: 225px;
+  }
+
+   .our-services h2 , .media-section h2{
+font-size: 26px;
+  }
+
+  .our-services h2 img , .media-section h2 img {
+    
+
+    width: 156px;
+    height: 9px;
+  }
+
+  .images h2{
+    font-size: 28px;
+  }
+
+  .why-choose-us {
+    margin-top: 30px ;
+  }
+
+  .benefits{
+    margin: 0px;
+    margin-left: 20px;
+    gap: 30px;
+    padding: 0px;
+  }
+
+  .features{
+    flex-wrap: nowrap;
+
+
+  }
+  .benefits-text h3{
+    font-size: 28px;
+
+  }
+
+  .benefits-text p{
+    font-size: 14px;
+  }
+
+  
+
+  .testimonial-card{
+    width: 300px;
+    height: 400px;
+  }
+
+
+  .card-body{
+
+    font-size: 18px;
+  }
+
+
+  .card-footer h5 , .card-footer h4{
+    font-size:18px;
+  
+
+  }
+
+  .card-footer p{
+    margin-left: 0px;
+  }
+  .card-footer img{
+    width: 45px;
+    height: 45px;
+  }
+
+  .footer-para{
+    padding: 80px;
+  }
+
+  
+.incubated-blackline{
+    display: block;
+    top: 3120px;
+  height: 550px;
+  }
+
+  }
+
+
+
+  
+@media (max-width:789px){
+
+  .content h2{
+    font-size: 34px;
+  }
+
+  .our-services h2{
+    padding-top: 30px;
+    font-size: 24px;
+  }
+
+  .our-services img{
+    width: 150px;
+  }
+
+
+  .incubated-blackline{
+    display: none;
+  }
+
+
+  .media-card a , .media-card1 a{
+
+    font-size: 18px;
+  }
+
+.app-links img{
+  width:240px;
+  height: 100px;
+
+}
+
+.card-footer h6{
+  left: 66%;
+}
+
+.card-footer h2{
+
+left: 41%;
+
+
+}
+
+.testimonial-container{
+  gap: 40px;
+}
+
+.card-footer p{
+  margin-left: 2px;
+
+}
+
+.card-img-top{
+  width: 213px;
+  height: 156px;
+}
+
+
+.phone-screen img{
+
+  width: 250px;
+  height: 550px;
+}
+
+.benefits-text{
+  padding: 0px 10px;
+}
+
+.benefits-text h3{
+
+  margin-left:20px;
+  font-size: 24px;
+}
+
+.benefits-text p{
+  font-size: 14px;
+}
+.text{
+  margin-top: 20px;
+}
+}
+
+@media(max-width:720px){
+
+  .qpo-why-choose{
+    
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.qpo-why-choose h3{
+  font-size: 20;
+  color: #0C6CFC;
+  font-weight: 600;
+}
+
+ .qpo-testimonial-mobile-section{
+  display: block;
+ }
+
+  .content h2{
+    top: 12%;
+    font-size: 20px;
+  }
+
+  .images{
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .app-links h2{
+    font-size: 24px;
+  }
+  
+ 
+
+  .media-card a ,.media-card1 a{
+    font-size:10px
+  }
+ 
+
+.app-links img{
+  margin: 50px 10px;
+  width: 183px;
+  height: 70px;
+}
+  .media-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .media-card1 img{
+    width: 140px;
+    height: auto;
+    margin: 0px;
+  }
+
+  .media-section h2 , .our-services h2{
+    font-size: 20px;
+  }
+
+  .media-section h2 img , .our-services h2 img{
+    margin: 0px 10px;
+    width: 95px;
+    height: 5px;
+  }
+
+  
+  .benefits{
+    display: none;
+  }
+
+  .qpo-mobile-section {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+}
+
+.qpo-mobile-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.qpo-mobile-title {
+  padding: 14px;
+  font-weight: medium;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.qpo-mobile-desc {
+  display: none;
+  padding: 0 14px 14px 14px;
+  font-size: 13px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.qpo-mobile-desc p {
+  margin: 0;
+  padding-left: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.card{
+  display: flex;
+}
+
+.mobile-arrow-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+.testimonial-section{
+  margin: 0px;
+  
+}
+
+.card-footer p ,.card-footer h6 , .card-footer h2{
+  margin: 0px;
+  margin-top: 20px;
+  left: 35%;
+}
+
+.footer-para{
+
+  padding: 25px;
+}
+
+
+.why-choose-us{
+  margin: 0px;
+}
+
+
+.why-choose-us{
+  display: none;
+}
+
+
+
+
+
+  
+ 
+  .qpo-card-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .qpo-card-image {
+    width: 157px;
+    height: 118px;
+    object-fit: contain;
+  }
+
+  .qpo-card-text {
+    flex: 1;
+  }
+
+  /* Reverse only 2nd card */
+  .col:nth-child(2) .qpo-card-content {
+    flex-direction: row-reverse;
+  }
+
+  .qpo-card-title {
+    font-size: 20px;
+    color: #000;
+    
+  }
+
+  .testimonial-section{
+    display: none;
+  }
+
+
+
+  .qpo-testimonial-mobile-section {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+  }
+
+  .qpo-testimonial-mobile-header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .qpo-testimonial-mobile-header h2 {
+    font-size: 22px;
+    margin: 30px 0px;
+    color: #0C6DFC;
+    font-weight: 700;
+  }
+
+  .qpo-testimonial-mobile-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .qpo-testimonial-mobile-track {
+    display: flex;
+    width: max-content;
+    animation: qpo-scroll-loop 24s linear infinite;
+  }
+
+  .qpo-testimonial-mobile-wrapper:hover .qpo-testimonial-mobile-track:hover {
+    animation-play-state: paused;
+  }
+
+  .qpo-testi-card-style2 {
+    flex: 0 0 370px;
+    padding: 16px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: sans-serif;
+  }
+
+  .qpo-testi-quote-icon-img img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .qpo-testi-body-style2 {
+    font-size: 20px;
+    padding: 20px;
+    font-family: poppins;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .qpo-testi-footer-style2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .qpo-testi-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .qpo-testi-info h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .qpo-testi-info p {
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+  }
+
+ .change{
+  margin-top: 60px;
+   display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+  @keyframes qpo-scroll-loop {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .qpo-why-choose{
+    margin-top: 20px;
+  }
+  .our-services img{
+    height: 150px;
+  }
+
+  .feature h3{
+    font-size: 24px;
+  }
+
+.Supported-By h2{
+    font-size: 26px;
+  }
+
+}
+
+
+@media (max-width: 416px) {
+
+  .content h2{
+    font-size: 17px;
+  }
+
+  .Supported-By h2{
+    font-size: 22px;
+  }
+
+  .app-links img{
+    width: 150px;
+    height: 60px;
+  }
+  .qpo-why-choose{
+    margin-top: 20px;
+  }
+
+  .our-services h2 , .media-section h2{
+    font-size: 17px;
+  }
+
+  .our-services h2 img , .media-section h2 img{
+    width: 100px;
+  }
+
+}
+
+@media (max-width:374px){
+
+.content h2{
+  font-size: 14px;
+}
+
+.our-services h2 , .media-section h2{
+    font-size: 12px;
+  }
+
+  .our-services h2 img , .media-section h2 img{
+    width: 80px;
+  }
+
+  .app-links img{
+    width:150px;
+    height: 55px;
+    margin-right: 5px;
+    margin-left: 0px;
+  }
+
+
+  .qpo-testimonial-mobile-header h2{
+    font-size: 22px;
+  }
+
+
+  .our-services h2 img , .media-section h2 img{
+
+
+
+width: 75px ;
+height: 3px;
+    margin: 0px 5px;
+  }
+
+  
+
+
+  .footer-right{
+
+    margin: 539px 0px 0px -100px;
+  }
+}
+
+
+
+/*  */
+
+
+
+/* Supported By Section Responsive Styles */
+.Supported-By {
+  width: 100%;
+  background: #fff;
+  padding: 60px 0 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Supported-By .supported-by-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 950px;
+  gap: 100px;
+  position: relative;
+}
+
+.Supported-By .incubated, 
+.Supported-By .supported {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Supported-By .incubated h2, 
+.Supported-By .supported h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: center;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+
+.Supported-By .vertical-divider {
+  width: 2px;
+  background: #000000;
+  opacity: 0.3;
+  height: 230px;
+  align-self: center;
+  margin: 0 50px;
+}
+
+.Supported-By .supported-logos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+  margin-top: 0;
+}
+
+.Supported-By .supported-logos img:first-child {
+  width: 140px;
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 900px) {
+  .Supported-By .supported-by-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .Supported-By .vertical-divider {
+    display: none;
+  }
+} 	
+
+
+
+
+

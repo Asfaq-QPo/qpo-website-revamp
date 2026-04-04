@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QPo - Shared Rides, Smarter Commutes</title>
+    <link rel="icon" href="/pictures/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ═══ Header ═══ -->
+    <header class="qpo-header">
+        <div class="nav-container">
+            <a href="/index.html" class="logo">
+                <img src="/pictures/QPo logo transparent bg.png" alt="QPo Logo" />
+                <span>QPo</span>
+            </a>
+            <div id="menu-btn" class="fas fa-bars" aria-label="Toggle menu" tabindex="0" role="button"></div>
+            <ul class="nav-links">
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/For-enterprises.html">For Enterprises</a></li>
+                <li><a href="/for-drivers.html">For Drivers</a></li>
+                <li><a href="#footer" data-contact-link>Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="header-spacer"></div>
+
+
+    <!-- ═══ HERO — Full-Screen Animated Route Map ═══ -->
+    <section class="qpo-hero qpo-hero--home">
+        <!-- Animated background layers -->
+        <div class="hero-gradient-mesh"></div>
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-orb hero-orb--3"></div>
+
+        <!-- Animated route paths with moving dots -->
+        <div class="hero-route-canvas">
+            <svg viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <!-- Route 1: Main road -->
+                <path d="M-50 420 C200 380, 400 520, 600 440 S900 300, 1100 380 S1350 460, 1500 360" stroke="rgba(74,148,255,0.06)" stroke-width="28" stroke-linecap="round" fill="none"/>
+                <path class="route-path route-path--1" d="M-50 420 C200 380, 400 520, 600 440 S900 300, 1100 380 S1350 460, 1500 360" stroke-dasharray="12 8" stroke-width="1.5"/>
+
+                <!-- Route 2: Secondary road -->
+                <path d="M80 680 C250 630, 450 720, 650 640 S950 500, 1150 580 S1350 660, 1500 560" stroke="rgba(0,212,170,0.04)" stroke-width="20" stroke-linecap="round" fill="none"/>
+                <path class="route-path route-path--2" d="M80 680 C250 630, 450 720, 650 640 S950 500, 1150 580 S1350 660, 1500 560" stroke-dasharray="10 6" stroke-width="1.2"/>
+
+                <!-- Route 3: Upper connecting road -->
+                <path d="M250 220 C420 180, 580 280, 750 210 S1050 160, 1250 240" stroke="rgba(74,148,255,0.03)" stroke-width="16" stroke-linecap="round" fill="none"/>
+                <path class="route-path route-path--3" d="M250 220 C420 180, 580 280, 750 210 S1050 160, 1250 240" stroke-dasharray="8 6" stroke-width="1"/>
+
+                <!-- Moving dot 1 (main route) -->
+                <circle r="5" fill="#4A94FF" opacity="0.8">
+                    <animateMotion dur="10s" repeatCount="indefinite" path="M-50 420 C200 380, 400 520, 600 440 S900 300, 1100 380 S1350 460, 1500 360" />
+                </circle>
+
+                <!-- Moving dot 2 (secondary route) -->
+                <circle r="4" fill="#00D4AA" opacity="0.6">
+                    <animateMotion dur="12s" repeatCount="indefinite" begin="3s" path="M80 680 C250 630, 450 720, 650 640 S950 500, 1150 580 S1350 660, 1500 560" />
+                </circle>
+
+                <!-- Moving dot 3 (upper route) -->
+                <circle r="3.5" fill="#4A94FF" opacity="0.5">
+                    <animateMotion dur="14s" repeatCount="indefinite" begin="1s" path="M250 220 C420 180, 580 280, 750 210 S1050 160, 1250 240" />
+                </circle>
+
+                <!-- Static waypoint dots -->
+                <circle cx="150" cy="400" r="4" fill="#00D4AA" opacity="0.5"/>
+                <circle cx="600" cy="440" r="4" fill="#4A94FF" opacity="0.5"/>
+                <circle cx="1100" cy="380" r="4" fill="#0C6CFC" opacity="0.5"/>
+                <circle cx="400" cy="680" r="3" fill="#00D4AA" opacity="0.3"/>
+                <circle cx="900" cy="530" r="3" fill="#4A94FF" opacity="0.3"/>
+            </svg>
+        </div>
+
+        <!-- Center content -->
+        <div class="hero-center-content">
+            <h1 class="animate-in">
+                Your Daily Commute,<br>
+                <span class="highlight">Reimagined.</span>
+            </h1>
+            <p class="hero-tagline animate-in animate-in-delay-2">
+                Save up to 60% on your daily commute with smart shared rides. Trusted by 5,000+ commuters across Chennai.
+            </p>
+            <div class="qpo-hero-cta animate-in animate-in-delay-3" style="margin-top: 0.5rem;">
+                <a href="https://apps.apple.com/us/app/qpo-shareauto/id6742070593" class="qpo-store-btn">
+                    <i class="fab fa-apple"></i>
+                    <span><small>Download on</small>App Store</span>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.qpocabs.qpo_rider&pli=1" class="qpo-store-btn">
+                    <i class="fab fa-google-play"></i>
+                    <span><small>Get it on</small>Google Play</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Floating Stats Bar (overlaps hero bottom) ═══ -->
+    <div class="qpo-section--dark" style="padding: 0 0 var(--section-padding);">
+        <div class="qpo-stat-bar reveal">
+            <div class="qpo-stat-bar-item">
+                <div class="qpo-stat-bar-number" data-target="5000">5,000+</div>
+                <div class="qpo-stat-bar-label">Happy Riders</div>
+            </div>
+            <div class="qpo-stat-bar-item">
+                <div class="qpo-stat-bar-number" data-target="2000">2,000+</div>
+                <div class="qpo-stat-bar-label">Trips Completed</div>
+            </div>
+            <div class="qpo-stat-bar-item">
+                <div class="qpo-stat-bar-number" data-target="7">7+</div>
+                <div class="qpo-stat-bar-label">Areas Covered</div>
+            </div>
+            <div class="qpo-stat-bar-item">
+                <div class="qpo-stat-bar-number">2,250+</div>
+                <div class="qpo-stat-bar-label">kG CO&#8322; Saved</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ═══ Wave Divider ═══ -->
+    <div class="qpo-wave-divider">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 60C360 20 720 80 1080 40C1260 20 1380 30 1440 60V80H0V60Z" fill="#F8FAFF"/>
+        </svg>
+    </div>
+
+
+    <!-- ═══ Why Choose Us — V2 Cards with gradient hover borders ═══ -->
+    <section class="qpo-section qpo-section--surface">
+        <div class="qpo-container text-center">
+            <h2 class="reveal">Why Choose QPo?</h2>
+            <div class="accent-line accent-line--center reveal"></div>
+
+            <div class="qpo-feature-grid reveal-stagger" style="margin-top: 3rem;">
+                <div class="qpo-feature-card-v2 reveal">
+                    <img src="/pictures/why-choose-1.png" alt="Pocket Friendly Rides">
+                    <h5>Pocket Friendly Rides</h5>
+                    <p style="margin-top: 0.5rem;">Save up to 60% on your daily commute with smart fare splitting.</p>
+                </div>
+                <div class="qpo-feature-card-v2 reveal">
+                    <img src="/pictures/why-choose-us-2.png" alt="Pay Just For Your Seat">
+                    <h5>Pay Just For Your Seat</h5>
+                    <p style="margin-top: 0.5rem;">No full-cab charges. Pay only for the seat you occupy.</p>
+                </div>
+                <div class="qpo-feature-card-v2 reveal">
+                    <img src="/pictures/why-choose-us-3.png" alt="No Long Waits">
+                    <h5>No Long Waits</h5>
+                    <p style="margin-top: 0.5rem;">System-assigned rides from nearby hotspots. Always on time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Benefits Section (Desktop) ═══ -->
+    <section class="qpo-section">
+        <div class="qpo-benefits">
+            <div class="qpo-benefits-phone reveal">
+                <img src="/pictures/Phone Screen img.png" alt="QPo App Screen">
+            </div>
+            <div class="qpo-benefits-list">
+                <span class="section-label reveal">The <span class="brand-keep">QPo</span> Advantage</span>
+                <h2 class="reveal" style="margin-bottom: 2rem;">Built for the everyday commuter</h2>
+                <div class="qpo-benefit-item reveal">
+                    <h3>Reduce daily commute costs by up to 60%</h3>
+                    <p><img src="/pictures/check.png" alt="check"> Split fares automatically and ride more affordably with trusted co-passengers.</p>
+                </div>
+                <div class="qpo-benefit-item reveal">
+                    <h3>No driver cancellations</h3>
+                    <p><img src="/pictures/check.png" alt="check"> All rides are system-assigned to reliable drivers, so there's no last-minute tension or confusion.</p>
+                </div>
+                <div class="qpo-benefit-item reveal">
+                    <h3>No surge pricing</h3>
+                    <p><img src="/pictures/check.png" alt="check"> Flat, transparent fares with no hidden fees — even during peak hours.</p>
+                </div>
+                <div class="qpo-benefit-item reveal">
+                    <h3>Lower your CO&#8322; footprint with every ride</h3>
+                    <p><img src="/pictures/check.png" alt="check"> Sharing your ride reduces your carbon footprint — without compromising convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Benefits Mobile Accordion ═══ -->
+    <section class="qpo-section qpo-mobile-accordion" style="padding-top: 0;">
+        <div class="qpo-container">
+            <div class="qpo-mobile-accordion-item">
+                <div class="qpo-mobile-accordion-title">
+                    Reduce daily commute costs by up to 60%
+                    <img src="/pictures/up-arrow.png" class="arrow" alt="toggle">
+                </div>
+                <div class="qpo-mobile-accordion-desc">
+                    <p><img src="/pictures/check.png" alt="check">Split fares automatically and ride more affordably with trusted co-passengers.</p>
+                </div>
+            </div>
+            <div class="qpo-mobile-accordion-item">
+                <div class="qpo-mobile-accordion-title">
+                    No driver cancellations
+                    <img src="/pictures/up-arrow.png" class="arrow" alt="toggle">
+                </div>
+                <div class="qpo-mobile-accordion-desc">
+                    <p><img src="/pictures/check.png" alt="check">All rides are system-assigned to reliable drivers, so there's no last-minute tension or confusion.</p>
+                </div>
+            </div>
+            <div class="qpo-mobile-accordion-item">
+                <div class="qpo-mobile-accordion-title">
+                    No surge pricing
+                    <img src="/pictures/up-arrow.png" class="arrow" alt="toggle">
+                </div>
+                <div class="qpo-mobile-accordion-desc">
+                    <p><img src="/pictures/check.png" alt="check">Flat, transparent fares with no hidden fees — even during peak hours.</p>
+                </div>
+            </div>
+            <div class="qpo-mobile-accordion-item">
+                <div class="qpo-mobile-accordion-title">
+                    Lower your CO&#8322; footprint with every ride
+                    <img src="/pictures/up-arrow.png" class="arrow" alt="toggle">
+                </div>
+                <div class="qpo-mobile-accordion-desc">
+                    <p><img src="/pictures/check.png" alt="check">Sharing your ride reduces your carbon footprint — without compromising convenience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Wave Divider to Dark ═══ -->
+    <div class="qpo-wave-divider qpo-wave-divider--flip">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 60C360 20 720 80 1080 40C1260 20 1380 30 1440 60V80H0V60Z" fill="#0B1426"/>
+        </svg>
+    </div>
+
+
+    <!-- ═══ Our Services (Dark Section — V2 Cards with glow) ═══ -->
+    <section class="qpo-section qpo-section--dark">
+        <div class="qpo-container text-center">
+            <span class="section-label section-label--light reveal">What We Do</span>
+            <h2 class="reveal">Our Services</h2>
+            <div class="accent-line accent-line--center reveal"></div>
+
+            <div class="qpo-services-grid reveal-stagger" style="margin-top: 3rem;">
+                <div class="qpo-service-card-v2 reveal">
+                    <img src="/pictures/image-1.png" alt="Seamless Ride Sharing">
+                    <h3>Seamless Ride Sharing</h3>
+                </div>
+                <div class="qpo-service-card-v2 reveal">
+                    <img src="/pictures/image-2.png" alt="Metro Link">
+                    <h3>Metro Link</h3>
+                </div>
+                <div class="qpo-service-card-v2 reveal">
+                    <img src="/pictures/image-3.png" alt="Female Only Rides">
+                    <h3>Female Only Rides</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Wave Divider ═══ -->
+    <div class="qpo-wave-divider">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 60C360 20 720 80 1080 40C1260 20 1380 30 1440 60V80H0V60Z" fill="#F8FAFF"/>
+        </svg>
+    </div>
+
+
+    <!-- ═══ Download App ═══ -->
+    <section class="qpo-section qpo-section--surface">
+        <div class="qpo-container qpo-download text-center reveal">
+            <span class="section-label">Get Started</span>
+            <h2>Download the App</h2>
+            <div class="accent-line accent-line--center"></div>
+            <p class="qpo-download-text" style="max-width: 640px; margin: 1.5rem auto;">Available on iOS and Android. Start your smarter commute today.</p>
+            <div class="qpo-download-links" style="margin-top: 1.5rem;">
+                <a href="https://apps.apple.com/us/app/qpo-shareauto/id6742070593"><img src="/pictures/apple-store.png" alt="Download on App Store"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.qpocabs.qpo_rider&pli=1"><img src="/pictures/play-store.png" alt="Get it on Google Play"></a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ In The Media ═══ -->
+    <section class="qpo-section qpo-media-section">
+        <div class="qpo-container text-center">
+            <span class="section-label reveal">Press Coverage</span>
+            <h2 class="reveal">In The Media</h2>
+            <div class="accent-line accent-line--center reveal"></div>
+        </div>
+        <div class="qpo-media-scroll-wrapper" style="margin-top: 2.5rem;">
+            <div class="qpo-media-scroll-track">
+                <div class="qpo-media-card"><a href="https://youtu.be/pRxEVFcSMo4?si=vRV1VZRe4TWzk6QQ"><img src="/pictures/logo-puthiya-thalaimurai.jpg" alt="Puthiya Thalaimurai"></a><p><a href="https://youtu.be/pRxEVFcSMo4?si=vRV1VZRe4TWzk6QQ">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://thebetterindia.com/396401/chennai-college-students-build-app-share-auto-qpo-traffic-route/"><img src="/pictures/logo-better-india.png" alt="The Better India"></a><p><a href="https://thebetterindia.com/396401/chennai-college-students-build-app-share-auto-qpo-traffic-route/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://indianexpress.com/article/education/life-in-an-iit-madras-indian-student-oman-cbse-class-12-btech-mechanical-engineering-startup-9531815/"><img src="/pictures/logo-indian-express.png" alt="The Indian Express"></a><p><a href="https://indianexpress.com/article/education/life-in-an-iit-madras-indian-student-oman-cbse-class-12-btech-mechanical-engineering-startup-9531815/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://adyartimes.in/qpo-shareride-a-mobile-application-to-hail-share-autos-on-omr/"><img src="/pictures/logo-adyar-times.png" alt="Adyar Times"></a><p><a href="https://adyartimes.in/qpo-shareride-a-mobile-application-to-hail-share-autos-on-omr/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://thesouthfirst.com/tamilnadu/qpo-redefining-city-commutes-with-innovative-share-auto-solutions/"><img src="/pictures/south-first-logo 2.png" alt="South First"></a><p><a href="https://thesouthfirst.com/tamilnadu/qpo-redefining-city-commutes-with-innovative-share-auto-solutions/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://citizenmatters.in/how-we-built-an-app-to-connect-share-autos-with-commuters-in-chennai/"><img src="/pictures/logo-citizen-matters.jpg" alt="Citizen Matters"></a><p><a href="https://citizenmatters.in/how-we-built-an-app-to-connect-share-autos-with-commuters-in-chennai/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://guindytimes.com/articles/qpo-shareride-revolutionizing-the-everyday-ride"><img src="/pictures/logo-guindy-times.png" alt="Guindy Times"></a><p><a href="https://guindytimes.com/articles/qpo-shareride-revolutionizing-the-everyday-ride">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://www.livechennai.com/detailnews.asp?catid=&newsid=72684"><img src="/pictures/logo-live-chennai.jpg" alt="Live Chennai"></a><p><a href="https://www.livechennai.com/detailnews.asp?catid=&newsid=72684">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://www.instagram.com/reel/DEpHl1loFRe/?igsh=MWVpamdxcGh5am5uYw=="><img src="/pictures/logo-chennai-live.png" alt="Chennai Live 104.8"></a><p><a href="https://www.instagram.com/reel/DEpHl1loFRe/?igsh=MWVpamdxcGh5am5uYw==">Read Article &rarr;</a></p></div>
+                <!-- Duplicate for seamless loop -->
+                <div class="qpo-media-card"><a href="https://youtu.be/pRxEVFcSMo4?si=vRV1VZRe4TWzk6QQ"><img src="/pictures/logo-puthiya-thalaimurai.jpg" alt="Puthiya Thalaimurai"></a><p><a href="https://youtu.be/pRxEVFcSMo4?si=vRV1VZRe4TWzk6QQ">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://thebetterindia.com/396401/chennai-college-students-build-app-share-auto-qpo-traffic-route/"><img src="/pictures/logo-better-india.png" alt="The Better India"></a><p><a href="https://thebetterindia.com/396401/chennai-college-students-build-app-share-auto-qpo-traffic-route/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://indianexpress.com/article/education/life-in-an-iit-madras-indian-student-oman-cbse-class-12-btech-mechanical-engineering-startup-9531815/"><img src="/pictures/logo-indian-express.png" alt="The Indian Express"></a><p><a href="https://indianexpress.com/article/education/life-in-an-iit-madras-indian-student-oman-cbse-class-12-btech-mechanical-engineering-startup-9531815/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://adyartimes.in/qpo-shareride-a-mobile-application-to-hail-share-autos-on-omr/"><img src="/pictures/logo-adyar-times.png" alt="Adyar Times"></a><p><a href="https://adyartimes.in/qpo-shareride-a-mobile-application-to-hail-share-autos-on-omr/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://thesouthfirst.com/tamilnadu/qpo-redefining-city-commutes-with-innovative-share-auto-solutions/"><img src="/pictures/south-first-logo 2.png" alt="South First"></a><p><a href="https://thesouthfirst.com/tamilnadu/qpo-redefining-city-commutes-with-innovative-share-auto-solutions/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://citizenmatters.in/how-we-built-an-app-to-connect-share-autos-with-commuters-in-chennai/"><img src="/pictures/logo-citizen-matters.jpg" alt="Citizen Matters"></a><p><a href="https://citizenmatters.in/how-we-built-an-app-to-connect-share-autos-with-commuters-in-chennai/">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://guindytimes.com/articles/qpo-shareride-revolutionizing-the-everyday-ride"><img src="/pictures/logo-guindy-times.png" alt="Guindy Times"></a><p><a href="https://guindytimes.com/articles/qpo-shareride-revolutionizing-the-everyday-ride">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://www.livechennai.com/detailnews.asp?catid=&newsid=72684"><img src="/pictures/logo-live-chennai.jpg" alt="Live Chennai"></a><p><a href="https://www.livechennai.com/detailnews.asp?catid=&newsid=72684">Read Article &rarr;</a></p></div>
+                <div class="qpo-media-card"><a href="https://www.instagram.com/reel/DEpHl1loFRe/?igsh=MWVpamdxcGh5am5uYw=="><img src="/pictures/logo-chennai-live.png" alt="Chennai Live 104.8"></a><p><a href="https://www.instagram.com/reel/DEpHl1loFRe/?igsh=MWVpamdxcGh5am5uYw==">Read Article &rarr;</a></p></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Supported By / Incubated By ═══ -->
+    <section class="qpo-section qpo-supported">
+        <div class="qpo-container">
+            <span class="section-label reveal" style="display:block;text-align:center;">Backed By The Best</span>
+            <div class="qpo-supported-wrapper reveal">
+                <div class="qpo-supported-block">
+                    <h3>Incubated By</h3>
+                    <div class="qpo-supported-logos">
+                        <img src="/pictures/supported-by-1.png" alt="IITM Incubation Cell" style="max-height: 180px;">
+                    </div>
+                </div>
+                <div class="qpo-supported-divider"></div>
+                <div class="qpo-supported-block">
+                    <h3>Supported By</h3>
+                    <div class="qpo-supported-logos">
+                        <img src="/pictures/supported-by-3.png" alt="Startup India" style="max-height: 130px;">
+                        <img src="/pictures/supported-by-4.png" alt="Startup TN" style="max-height: 150px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Wave Divider ═══ -->
+    <div class="qpo-wave-divider qpo-wave-divider--flip">
+        <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 60C360 20 720 80 1080 40C1260 20 1380 30 1440 60V80H0V60Z" fill="#F8FAFF"/>
+        </svg>
+    </div>
+
+
+    <!-- ═══ Testimonials — V2 Cards with animated left border ═══ -->
+    <section class="qpo-section qpo-section--surface qpo-testimonials">
+        <div class="qpo-container">
+            <h2 class="reveal">Hear It from Our Riders</h2>
+            <div class="accent-line accent-line--center reveal"></div>
+
+            <!-- Desktop Grid -->
+            <div class="qpo-testimonial-grid reveal-stagger" style="margin-top: 3rem;">
+                <div class="qpo-testimonial-card-v2 reveal">
+                    <div class="qpo-testimonial-quote-icon"><img src="/pictures/testi-img.png" alt="quote"></div>
+                    <div class="qpo-testimonial-body">
+                        "Didn't expect to enjoy a share auto ride this much! QPo made it affordable, fixed-route, and on time. A smart solution for city travel chaos — feels like something that could stick."
+                    </div>
+                    <div class="qpo-testimonial-footer">
+                        <img src="/pictures/man.png" alt="Durai Murugan P">
+                        <div class="qpo-testimonial-info"><h4>Durai Murugan P</h4><p>Bizdom Solutions, Chennai</p></div>
+                    </div>
+                </div>
+
+                <div class="qpo-testimonial-card-v2 reveal">
+                    <div class="qpo-testimonial-quote-icon"><img src="/pictures/testi-img.png" alt="quote"></div>
+                    <div class="qpo-testimonial-body">
+                        "Booked via app &rarr; Pickup in 5 min &rarr; Reached on time &rarr; Paid &#8377;30. Super simple and perfect for daily commute. No haggling or waiting!"
+                    </div>
+                    <div class="qpo-testimonial-footer">
+                        <img src="/pictures/man.png" alt="Jadasasank Reddy">
+                        <div class="qpo-testimonial-info"><h4>Jadasasank Reddy</h4><p>Cognizant, Chennai</p></div>
+                    </div>
+                </div>
+
+                <div class="qpo-testimonial-card-v2 reveal">
+                    <div class="qpo-testimonial-quote-icon"><img src="/pictures/testi-img.png" alt="quote"></div>
+                    <div class="qpo-testimonial-body">
+                        "A refreshing middle ground between random autos and expensive cabs. Just 3-person pooling, picked up from a hotspot. Way more comfortable and cost-effective."
+                    </div>
+                    <div class="qpo-testimonial-footer">
+                        <img src="/pictures/man.png" alt="Barathkumar A">
+                        <div class="qpo-testimonial-info"><h4>Barathkumar A</h4><p>Perficient, Chennai</p></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Scroll -->
+            <div class="qpo-testimonial-scroll-wrapper" style="margin-top: 2rem;">
+                <div class="qpo-testimonial-scroll-track">
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"Didn't expect to enjoy a share auto ride this much! QPo made it affordable, fixed-route, and on time. A smart solution for city travel chaos — feels like something that could stick."</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Durai Murugan P</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Bizdom Solutions, Chennai</span></div></div>
+                    </div>
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"Booked via app &rarr; Pickup in 5 min &rarr; Reached on time &rarr; Paid &#8377;30. Super simple and perfect for daily commute. No haggling or waiting!"</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Jadasasank Reddy</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Cognizant, Chennai</span></div></div>
+                    </div>
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"A refreshing middle ground between random autos and expensive cabs. Just 3-person pooling, picked up from a hotspot. Way more comfortable and cost-effective."</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Barathkumar A</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Perficient, Chennai</span></div></div>
+                    </div>
+                    <!-- Duplicate for loop -->
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"Didn't expect to enjoy a share auto ride this much! QPo made it affordable, fixed-route, and on time. A smart solution for city travel chaos — feels like something that could stick."</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Durai Murugan P</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Bizdom Solutions, Chennai</span></div></div>
+                    </div>
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"Booked via app &rarr; Pickup in 5 min &rarr; Reached on time &rarr; Paid &#8377;30. Super simple and perfect for daily commute. No haggling or waiting!"</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Jadasasank Reddy</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Cognizant, Chennai</span></div></div>
+                    </div>
+                    <div class="qpo-testimonial-scroll-card">
+                        <div><img src="/pictures/testi-img.png" alt="quote" style="width:28px;height:auto;opacity:0.6;"></div>
+                        <div style="font-size:0.9375rem;color:var(--color-text-secondary);line-height:1.7;">"A refreshing middle ground between random autos and expensive cabs. Just 3-person pooling, picked up from a hotspot. Way more comfortable and cost-effective."</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem;padding-top:0.75rem;border-top:1px solid var(--color-border);"><img src="/pictures/man.png" alt="profile" style="width:40px;height:40px;border-radius:50%;"><div><strong style="font-size:0.875rem;">Barathkumar A</strong><br><span style="font-size:0.75rem;color:var(--color-text-muted);">Perficient, Chennai</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══ Footer ═══ -->
+    <footer class="qpo-footer" id="footer">
+        <div class="qpo-footer-content">
+            <div class="qpo-footer-brand">
+                <div class="logo">
+                    <img src="/pictures/footer-logo.png" alt="QPo Logo">
+                    <span>QPo</span>
+                </div>
+                <p>At QPo, we believe that every ride should be more than just transportation — it should be an experience. We're a leading shared mobility platform offering reliable, affordable, and comfortable rides across the city.</p>
+                <div class="qpo-footer-social">
+                    <a href="https://www.linkedin.com/company/qpo-cabs/"><img src="/pictures/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/qpo.app/"><img src="/pictures/instagram.png" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/@QPo_Cabs"><img src="/pictures/youtube.png" alt="YouTube"></a>
+                    <a href="https://www.facebook.com/qpocabs"><img src="/pictures/facebook.png" alt="Facebook"></a>
+                    <a href="https://x.com/qpo_cabs"><img src="/pictures/twitter.png" alt="X / Twitter"></a>
+                </div>
+            </div>
+
+            <div class="qpo-footer-contact">
+                <h4>Get in Touch</h4>
+                <div class="qpo-footer-contact-item">
+                    <img src="/pictures/call.png" alt="Phone">
+                    <span>+91 9597379057</span>
+                </div>
+                <div class="qpo-footer-contact-item">
+                    <img src="/pictures/mail.png" alt="Email">
+                    <span>contact@qpocabs.com</span>
+                </div>
+            </div>
+
+            <div class="qpo-footer-links">
+                <h4>Legal</h4>
+                <a href="/policy.html">Privacy Policy</a>
+                <a href="/refund_policy.html">Refund Policy</a>
+                <a href="/tandc.html">Terms & Conditions</a>
+            </div>
+        </div>
+
+        <div class="qpo-footer-bottom">
+            <p>&copy; QPo 2026. All rights reserved by Unovay Technologies Private Limited</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/animations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+.our-services h2 img{
+    width: 208px;
+    padding: 0px 10px;
+}
+
+.our-services h2{
+    font-size: 32px;
+}
+
+@media (max-width:1025px){
+
+
+    .images img{
+        width: 160px;
+        height:150px;
+    }
+
+    .image-text{
+        font-size: 24px;
+    }
+
+.our-services h2 img{
+    width: 208px;
+}
+
+.features{
+    margin: 0px 20px;
+}
+}
+
+@media (max-width:770px){
+
+
+    /* First red bar */
+.red-bars img:nth-child(1) {
+  width: 90px;
+  height: 5px;
+}
+
+.nav-links{
+    margin: 0px;
+    padding: 0px;
+    width: 60vw;
+}
+
+.Info h2
+{
+    font-size: 28px;
+
+
+}
+
+.hero h2{
+
+    font-size: 24px;
+}
+
+    .image-text{
+        font-size: 20px;
+    }
+/* Second red bar */
+.red-bars img:nth-child(2) {
+  width: 80px;
+  height: 5px;
+  
+}
+
+/* Third red bar */
+.red-bars img:nth-child(3) {
+  width: 45px;
+  height: 5px;
+  
+}
+
+/* Fourth red bar */
+.red-bars img:nth-child(4) {
+  width: 110px;
+  height: 5px;
+
+
+}
+
+
+
+}
+
+
+/* Mobile */
+
+@media (max-width:725px){
+
+
+    .achievement-card p{
+        font-size: 16px ;
+    }
+
+    .our-services h2 img{
+        width: 120px;
+        height: 5px;
+        margin: 0px 1px;
+    }
+
+    .our-services h2{
+        font-size:26px;
+    }
+
+
+
+}
+
+
+@media (max-width: 385px){
+
+    .hero h2{
+        font-size: 20px;
+    }
+
+    .hero p{
+
+
+        font-size: 14px;
+    }
+
+
+      .our-services h2 img{
+        width: 80px;
+        height: 3px;
+        margin: 0px 0px;
+    }
+
+    .our-services h2{
+        font-size:12px;
+    }
+
+}
