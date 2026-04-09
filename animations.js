@@ -145,6 +145,35 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
+  /* ── Partners section: URL update when in view ──────────── */
+  const partnersSection = document.getElementById('partners');
+  if (partnersSection) {
+    let partnersActive = false;
+    const originalPath = window.location.pathname;
+
+    const partnersObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !partnersActive) {
+          partnersActive = true;
+          history.replaceState(null, '', 'partners');
+        } else if (!entry.isIntersecting && partnersActive) {
+          partnersActive = false;
+          history.replaceState(null, '', originalPath || '/');
+        }
+      });
+    }, { threshold: 0.3 });
+
+    partnersObserver.observe(partnersSection);
+
+    // Handle direct /partners URL on page load
+    if (window.location.pathname.endsWith('/partners') || window.location.hash === '#partners') {
+      setTimeout(() => {
+        partnersSection.scrollIntoView({ behavior: 'smooth' });
+      }, 300);
+    }
+  }
+
+
   /* ── Contact Us: URL update & active highlight ─────────── */
   const contactLink = document.querySelector('[data-contact-link]');
   const footer = document.getElementById('footer');
