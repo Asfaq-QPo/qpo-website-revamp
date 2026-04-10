@@ -232,7 +232,7 @@ p {
   align-items: center;
   max-width: var(--container-max);
   margin: 0 auto;
-  padding: 0.75rem var(--container-padding);
+  padding: 0.4rem var(--container-padding);
 }
 
 .qpo-header .logo {
@@ -243,20 +243,15 @@ p {
 }
 
 .qpo-header .logo img {
-  width: 48px;
-  height: 48px;
+  height: 36px;
+  width: auto;
   border-radius: 0;
   background: transparent;
-  mix-blend-mode: multiply;
   object-fit: contain;
 }
 
 .qpo-header .logo span {
-  font-family: var(--font-display);
-  font-size: clamp(1.25rem, 2vw, 1.5rem);
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: -0.02em;
+  display: none;
 }
 
 .qpo-header .nav-links {
@@ -268,7 +263,7 @@ p {
 
 .qpo-header .nav-links a {
   font-family: var(--font-display);
-  font-size: clamp(0.8125rem, 1vw, 0.9375rem);
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
   font-weight: 500;
   white-space: nowrap;
   color: var(--color-text-secondary);
@@ -319,7 +314,7 @@ p {
 
 /* Header spacer to push content below fixed header */
 .header-spacer {
-  height: 76px;
+  height: 52px;
 }
 
 
@@ -985,16 +980,13 @@ p {
 }
 
 .qpo-footer-brand .logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-sm);
+  height: 36px;
+  width: auto;
+  border-radius: 0;
 }
 
 .qpo-footer-brand .logo span {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--color-white);
+  display: none;
 }
 
 .qpo-footer-brand p {
@@ -1467,14 +1459,31 @@ p {
   display: flex;
 }
 
+.qpo-driver-right-col {
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .qpo-driver-hero .qpo-hero-image img {
-  width: 150%;
-  max-width: none;
+  width: 100%;
+  max-width: 380px;
   object-fit: contain;
   border-radius: 0;
   filter: drop-shadow(0 10px 40px rgba(0, 0, 0, 0.25));
-  margin-left: -30%;
-  margin-top: -40px;
+}
+
+/* Light store buttons for dark backgrounds */
+.qpo-store-btn--light {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  backdrop-filter: blur(8px);
+}
+
+.qpo-store-btn--light:hover {
+  background: rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.15) !important;
 }
 
 .qpo-driver-form-wrapper {
@@ -1596,7 +1605,7 @@ p {
   .qpo-driver-hero .qpo-hero-image img {
     max-width: 350px;
     position: relative;
-    left: -30px;
+    left: -10px;
   }
 
   .qpo-driver-form-wrapper {
@@ -1690,6 +1699,39 @@ p {
     display: none;
   }
 
+  /* Single column grids on mobile */
+  .qpo-feature-grid,
+  .qpo-services-grid,
+  .qpo-team-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .qpo-feature-grid > :last-child:nth-child(odd),
+  .qpo-services-grid > :last-child:nth-child(odd),
+  .qpo-team-grid > :last-child:nth-child(odd) {
+    grid-column: auto !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .qpo-team-card img {
+    width: 140px;
+    height: 140px;
+  }
+
+  /* Center Get Started section on mobile */
+  .qpo-section--surface [style*="grid-template-columns:1fr 1.2fr"],
+  .qpo-section--surface [style*="grid-template-columns: 1fr 1.2fr"] {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  .qpo-steps .qpo-step {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   /* Show mobile accordion, hide desktop benefits */
   .qpo-mobile-accordion {
     display: block;
@@ -1728,6 +1770,20 @@ p {
     margin: 0 auto;
   }
 
+  .qpo-supported-block {
+    width: 100%;
+    align-items: center;
+  }
+
+  .qpo-supported-logos {
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+
+  .qpo-supported-logos img {
+    max-height: 80px !important;
+  }
+
   .qpo-hero {
     min-height: auto;
     padding: clamp(3rem, 8vw, 5rem) 0;
@@ -1745,12 +1801,12 @@ p {
   }
 
   .qpo-driver-hero .qpo-hero-image img {
-    max-width: 95%;
-    width: 340px;
+    max-width: 80%;
+    width: 280px;
     display: block;
     margin: 0 auto;
     position: relative;
-    left: -70px;
+    left: 15px;
   }
 
   .qpo-driver-hero .qpo-hero-content [style*="grid-template-columns"] {
@@ -1771,6 +1827,12 @@ p {
     margin-right: auto;
     width: 160px;
   }
+
+  /* Hide phone screenshot in Get Started on mobile */
+  .qpo-section--surface [style*="grid-template-columns:1fr 1.2fr"] > div:first-child,
+  .qpo-section--surface [style*="grid-template-columns: 1fr 1.2fr"] > div:first-child {
+    display: none;
+  }
 }
 
 
@@ -1780,7 +1842,17 @@ p {
   .qpo-services-grid,
   .qpo-feature-grid,
   .qpo-team-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  /* Center enterprise images when Bootstrap cols stack */
+  .qpo-container .row .col-lg-6 {
+    text-align: center;
+  }
+
+  .qpo-container .row .col-lg-6 img {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .qpo-stats-grid {
@@ -1800,12 +1872,22 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+/* Override 2-col back to 1-col on phones */
+@media (max-width: 600px) {
+  .qpo-feature-grid,
+  .qpo-services-grid,
+  .qpo-team-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   .qpo-testimonial-grid > :last-child:nth-child(odd),
   .qpo-services-grid > :last-child:nth-child(odd),
   .qpo-stats-grid > :last-child:nth-child(odd),
+  .qpo-feature-grid > :last-child:nth-child(odd),
   .qpo-team-grid > :last-child:nth-child(odd) {
-    max-width: 100%;
+    max-width: 100% !important;
+    grid-column: auto !important;
+    margin: 0 !important;
   }
 }
 
